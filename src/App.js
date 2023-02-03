@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PhoneBook from "./Pages/PhoneBook/PhoneBook"
 import ToDo from "./Pages/ToDoList/ToDo"
 import PostIts from "./Pages/PostIts/PostIts"
@@ -63,7 +63,7 @@ return (
                                         filterCommand={FilterContacts}></PhoneBook>} />
         <Route path="postits" element={<PostIts />} />
         <Route path="todos" element={<ToDo />} />
-        <Route path="*" element={<div>Page not found!! Try /phonebook</div>} />
+        <Route path="*" element={<div>Page not found!! Try <Link to="/phonebook">Phone Book</Link></div>} />
     </Routes>
   </BrowserRouter>
 )
