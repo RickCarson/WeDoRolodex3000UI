@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-Main {
+  max-width: 600px;
+}
+
+.PhoneBookHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2s0px;
+  font-size: 2.5em;
+}
+
+.PhoneBookSubHeader {
+  margin: 20px;
+  font-size: 1.5em;
+  max-width: 600px;
+}
+
+.PhoneBookSubHeaderButton {
+  float: right;
+  margin: 20px;
+}
+
+
+.PhoneBookSearchSection {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.PhoneBookSearch {
+  width: 100%;
+}
+
+.ContactsSection {
+  margin: 20px;
+}
+
+.ClickableListItem {
+  cursor: pointer;
+}
