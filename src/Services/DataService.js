@@ -1,4 +1,6 @@
 
+const ContactsUrl = "https://localhost:7131/api/Contacts/";
+
 const ApiGet = async (url) => {
     const response = await fetch(url);
     const jsonResponse = await response.json();
@@ -42,4 +44,4 @@ const ApiPut = async (url, body) => {
 };
 
 
-export { ApiGet, ApiDelete, ApiPost, ApiPut }
+export { ApiGet, ApiDelete, ApiPost, ApiPut, ContactsUrl}

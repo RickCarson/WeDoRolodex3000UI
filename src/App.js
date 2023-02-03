@@ -3,16 +3,14 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PhoneBook from "./Pages/PhoneBook/PhoneBook"
 import ToDo from "./Pages/ToDoList/ToDo"
 import PostIts from "./Pages/PostIts/PostIts"
-import { ApiGet } from "./Services/DataService";
+import { ApiGet, ContactsUrl } from "./Services/DataService";
 import './App.css';
-
-const contactsUrl = "https://localhost:7131/api/Contacts";
 
 export default function App() {
   const [apiContacts, setApiContacts] = useState([])
   
   const refreshContactData = () => {
-    ApiGet(contactsUrl).then(
+    ApiGet(ContactsUrl).then(
       result => setApiContacts(result));
   }
 

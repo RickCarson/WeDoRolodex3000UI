@@ -10,9 +10,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { ApiPost, ApiPut } from '../../Services/DataService';
-
-const ContactsUrl = "https://localhost:7131/api/Contacts/"
+import { ApiPost, ApiPut, ContactsUrl } from '../../Services/DataService';
 
 export default function PhoneBook({contacts, refreshCommand, removeCommand, addCommand, updateCommand, filterCommand}) {
     const [open, setOpen] = useState(false);

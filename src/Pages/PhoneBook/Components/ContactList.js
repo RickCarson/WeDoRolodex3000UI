@@ -8,15 +8,13 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
-import { ApiDelete } from '../../../Services/DataService';
-
-const deleteUrl = "https://localhost:7131/api/Contacts/"
+import { ApiDelete, ContactsUrl } from '../../../Services/DataService';
 
 export default function ContactList({contacts, removeCommand, selectContact}) {
 
     const onClickDelete = (contact) => {
         console.log("Deleting {contact.id}");
-        const result = ApiDelete(deleteUrl + contact.id);
+        const result = ApiDelete(ContactsUrl + contact.id);
         console.log(result);
 
         removeCommand(contact);
